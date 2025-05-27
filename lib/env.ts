@@ -1,0 +1,12 @@
+import { z } from "zod";
+
+import tryParseEnv from "./try-parse.env";
+
+const EnvSchema = z.object({
+  NODE_ENV: z.string(),
+});
+
+tryParseEnv(EnvSchema);
+
+export type EnvSchema = z.infer<typeof EnvSchema>;
+export default EnvSchema.parse(process.env);
