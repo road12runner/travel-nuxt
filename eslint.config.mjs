@@ -12,6 +12,7 @@ export default withNuxt(antfu({
     semi: true,
     quotes: "double",
   },
+  ignores: [".pnpm-store/**", "**/migrations/*", "Readme.md", "dist/**", "build/**", "coverage/**", "node_modules/**", ".nuxt/**"],
   rules: {
     "ts/no-redeclare": "off",
     "ts/consistent-type-definitions": ["error", "type"],
