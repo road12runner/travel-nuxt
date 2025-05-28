@@ -43,3 +43,9 @@ Locally preview production build:
 pnpm preview
 
 ```
+
+turso dev --db-file local.db
+
+pnpm drizzle-kit generate
+
+pnpm drizzle-kit generate
