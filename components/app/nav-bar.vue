@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AuthButton from "~/components/auth-button.vue";
 </script>
 
 <template>
@@ -10,7 +11,7 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <a class="btn btn-accent">Sign In <Icon name="tabler:brand-github" /></a>
+      <AuthButton />
     </div>
   </div>
 </template>

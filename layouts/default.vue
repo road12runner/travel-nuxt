@@ -5,7 +5,7 @@
 <template>
   <div class="flex min-h-screen flex-col">
     <AppNavBar />
-    <main>
+    <main class="min-h-screen">
       <slot />
     </main>
   </div>
