@@ -23,7 +23,12 @@ const { loading, signIn, user } = useAuthStore();
       </li>
     </ul>
   </div>
-  <button v-else :disabled="loading" class="btn btn-accent" @click="signIn">
+  <button
+    v-else
+    :disabled="loading"
+    class="btn btn-accent"
+    @click="signIn"
+  >
     Sign In
     <span v-if="loading" class="loading loading-spinner loading-md" />
     <Icon v-else name="tabler:brand-github" size="24" />
